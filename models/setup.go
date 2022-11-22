@@ -15,6 +15,7 @@ func ConnectDatabase() {
 	}
 
 	database.AutoMigrate(&Book{})
+	database.AutoMigrate(&Category{})
 
 	DB = database
 }
